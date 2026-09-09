@@ -1,5 +1,3 @@
-@import url('https://googleapis.com');
-
 :root {
     --primary-color: #034f84;    
     --secondary-color: #1c1c1c;  
@@ -28,7 +26,8 @@ header {
     padding: 1.8rem 0 0 0;
 }
 
-header h1 {
+header #course-title {
+    display: block; 
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
