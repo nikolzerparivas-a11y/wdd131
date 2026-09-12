@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Álbum de Templos - Karen Zerpa</title>
+    <meta name="description" content="Página de Álbum de Templos desenvolvida para o curso WDD 131, praticando estruturas HTML avançadas, componentes mobile-first e exibições dinâmicas.">
+    <meta name="author" content="Karen Nikol Zerpa Rivas">
+    
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/templos.css">
+    <link rel="stylesheet" href="estilos/templos-grandes.css">
+    
+    <script src="scripts/templos.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <span id="course-title">Álbum do Templo</span>
+        <button id="menu-button" aria-label="Alternar menu">☰</button>
+        <nav>
+            <ul id="menu-links">
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Antigo</a></li>
+                <li><a href="#">Novo</a></li>
+                <li><a href="#">Grande</a></li>
+                <li><a href="#">Pequeno</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="main-title">Galeria de Templos</h1>
+        
+        <div class="temples-grid">
+            
+            <figure class="temple-card">
+                <img src="imagens/perfil.jpg" alt="Templo de Campinas" width="400" height="250" loading="lazy">
+                <figcaption>Templo de Campinas, Brasil</figcaption>
+            </figure>
+
+            <figure class="temple-card">
+                <img src="imagens/perfil.jpg" alt="Templo de Salt Lake" width="400" height="250" loading="lazy">
+                <figcaption>Templo de Salt Lake</figcaption>
+            </figure>
+
+            <figure class="temple-card">
+                <img src="imagens/perfil.jpg" alt="Templo de São Paulo" width="400" height="250" loading="lazy">
+                <figcaption>Templo de São Paulo, Brasil</figcaption>
+            </figure>
+
+            <figure class="temple-card">
+                <img src="imagens/perfil.jpg" alt="Templo de Manti" width="400" height="250" loading="lazy">
+                <figcaption>Templo de Manti</figcaption>
+            </figure>
+
+            <figure class="temple-card">
+                <img src="imagens/perfil.jpg" alt="Templo de Logan" width="400" height="250" loading="lazy">
+                <figcaption>Templo de Logan</figcaption>
+            </figure>
+
+            <figure class="temple-card">
+                <img src="imagens/perfil.jpg" alt="Templo de Provo" width="400" height="250" loading="lazy">
+                <figcaption>Templo de Provo</figcaption>
+            </figure>
+
+            <figure class="temple-card">
+                <img src="imagens/perfil.jpg" alt="Templo de Nauvoo" width="400" height="250" loading="lazy">
+                <figcaption>Templo de Nauvoo</figcaption>
+            </figure>
+
+            <figure class="temple-card">
+                <img src="imagens/perfil.jpg" alt="Templo de Paris" width="400" height="250" loading="lazy">
+                <figcaption>Templo de Paris, França</figcaption>
+            </figure>
+
+            <figure class="temple-card">
+                <img src="imagens/perfil.jpg" alt="Templo de Roma" width="400" height="250" loading="lazy">
+                <figcaption>Templo de Roma, Itália</figcaption>
+            </figure>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> 🌺 Karen Zerpa 🌺 Campinas, SP</p>
+        <p id="ultimaModificacao" class="highlight-date"></p>
+    </footer>
+
+</body>
+</html>
