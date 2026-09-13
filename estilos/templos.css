@@ -5,6 +5,8 @@
     --bg-color: #f4f7f6;         
     --card-bg: #ffffff;           
     --accent-color: #0077b6;      
+    --border-color: #dcdcdc;
+    --divider-color: #e6e6e6;
 }
 
 * {
@@ -22,7 +24,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--card-bg);
     text-align: center;
     padding: 1.5rem 0 0 0;
 }
@@ -36,6 +38,17 @@ header #course-title {
     letter-spacing: 0.5px;
 }
 
+#menu-button {
+    display: block;            
+    background: none;
+    border: none;
+    color: var(--card-bg);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0 auto 0.5rem auto; 
+}
+
 nav {
     background-color: var(--secondary-color);
 }
@@ -47,8 +60,12 @@ nav ul {
     width: 100%;
 }
 
+nav ul.open {
+    display: flex; 
+}
+
 nav a {
-    color: #ffffff;
+    color: var(--card-bg);
     text-decoration: none;
     padding: 0.8rem 1.5rem;
     display: block;
@@ -58,14 +75,9 @@ nav a {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-
-nav ul.open {
-    display: flex; 
-}
-
 nav a:hover {
     background-color: var(--accent-color);
-    color: #ffffff;
+    color: var(--card-bg);
 }
 
 .main-title {
@@ -73,14 +85,34 @@ nav a:hover {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     margin: 2rem 0;
-    color: #1a1a1a;
+    color: var(--secondary-color);
 }
 
 main {
     max-width: 1050px;      
-    margin: 0 auto 3rem auto; 
-    padding: 0 1rem;
-    width: 100%;
+    margin: 0 auto 4rem auto; 
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;               
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: var(--card-bg);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.7rem;
 }
 
 .temples-grid {
@@ -91,7 +123,7 @@ main {
 
 .temple-card {
     background-color: var(--card-bg);
-    border: 1px solid #dcdcdc;
+    border: 1px solid var(--border-color);
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -118,15 +150,51 @@ main {
     color: var(--primary-color);
     padding: 1rem;
     text-align: center;
-    background-color: #ffffff;
-    border-top: 1px solid #f0f0f0;
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--bg-color);
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid var(--divider-color);
+    margin: 0 1.8rem;
+}
+
+.resources-card ul {
+    list-style: none;
+    padding: 1.8rem;
+}
+
+.resources-card li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.resources-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    top: -2px;
+}
+
+.resources-card a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-size: 0.95rem;
+}
+
+.resources-card a:hover {
+    color: var(--primary-color);
 }
 
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--card-bg);
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.8rem;
     font-size: 0.9rem;
     margin-top: auto;
 }
@@ -139,15 +207,4 @@ footer p {
     color: #ffff00; 
     font-size: 0.85rem;
     font-weight: 500;
-}
-
-#menu-button {
-    display: block;            
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    margin: 0 auto 0.5rem auto; 
 }
