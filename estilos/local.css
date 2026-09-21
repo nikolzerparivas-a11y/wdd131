@@ -7,6 +7,7 @@
     --card-bg: #ffffff;          
     --border-color: #fde047;     
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -203,4 +204,33 @@ footer {
     .bloco-alternado:nth-child(even) {
         flex-direction: row-reverse;
     }
+}
+
+.clima-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: #fffaf0; 
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: 1px dashed var(--border-color);
+    margin-bottom: 1.5rem;
+}
+
+.clima-icon {
+    width: 32px;
+    height: 32px;
+    animation: spin 20s linear infinite; 
+}
+
+.clima-info {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
