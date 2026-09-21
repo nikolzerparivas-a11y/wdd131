@@ -94,6 +94,16 @@ nav a:hover {
     color: #1a1a1a;
 }
 
+.main-title::after {
+    content: '';
+    display: block;
+    width: 80px;                  
+    height: 4px;                 
+    background-color: var(--primary-color); 
+    margin: 0.6rem auto 0 auto;  
+    border-radius: 2px;
+}              
+
 main {
     max-width: 1050px;
     margin: 0 auto 4rem auto;
