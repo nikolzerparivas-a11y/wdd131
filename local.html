@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Maracaibo: História e Cultura - Karen Zerpa</title>
+    <meta name="description" content="Página sobre a cidade de Maracaibo, Venezuela. Conheça sua rica história, cultura vibrante, clima e pontos turísticos. Desenvolvido para o curso WDD 131.">
+    <meta name="author" content="Karen Nikol Zerpa Rivas">
+    
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/local.css">
+    
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <span id="course-title">Descobrindo Maracaibo</span>
+        <button id="menu-button" aria-label="Alternar menu">☰</button>
+        <nav>
+            <ul id="menu-links">
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">História</a></li>
+                <li><a href="#">Cultura</a></li>
+                <li><a href="#">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <picture class="hero-container">
+        <source media="(min-width: 768px)" srcset="imagens/maracaibo-grande.jpg">
+        <img src="imagens/maracaibo-pequena.jpg" alt="Bela vista do Lago de Maracaibo e sua famosa ponte" class="hero-img" loading="eager">
+    </picture>
+
+    <main>
+        <h1 class="main-title">Maracaibo: Tierra do Sol Amada</h1>
+        
+    <section class="card text-card">
+        <h2>Cultura, Sabores e Cotidiano</h2>
+    
+        <div class="bloco-alternado">
+            <div class="texto-bloco">
+                <h3>A Gaita Zuliana</h3>
+                <p>A música corre nas veias de Maracaibo através da Gaita, um gênero musical tradicional tocado com furro, quatro, maracas e tambora. É a trilha sonora que une as famílias e ecoa com força total nas festividades do ano inteiro.</p>
+            </div>
+            <img src="imagens/gaita-zuliana.jpg" alt="Músicos tocando Gaita Zuliana tradicional" class="cidade-img" width="300" height="200" loading="lazy">
+        </div>
+
+        <hr class="divider">
+
+        <div class="bloco-alternado">
+            <div class="texto-bloco">
+                <h3>Sabores de Maracaibo</h3>
+                <p>A culinária maracucha é famosa por sua criatividade e sabores intensos. O rei das mesas é o <strong>Patacón</strong> (banana verde frita e prensada, recheada com carne, queijo e molhos), acompanhado de deliciosas mandocas e empanadas fritas.</p>
+            </div>
+            <img src="imagens/comida-maracucha.jpg" alt="Delicioso patacón maracucho recheado" class="cidade-img" width="300" height="200" loading="lazy">
+        </div>
+
+        <hr class="divider">
+
+        <div class="bloco-alternado">
+            <div class="texto-bloco">
+                <h3>Calor Humano e Resiliência</h3>
+                <p>O povo de Maracaibo é conhecido por sua alegria diante das dificuldades cotidianas. Quando falta energia elétrica, é uma tradição cultural os vizinhos colocarem as cadeiras na frente de suas casas coloridas para conversar e refrescar-se com a brisa da noite.</p>
+            </div>
+        <img src="imagens/frente-casa.jpg" alt="Moradores conversando sentados na frente de casa" class="cidade-img" width="300" height="200" loading="lazy">
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> 🌺 Karen Zerpa 🌺 Campinas, SP</p>
+        <p id="ultimaModificacao" class="highlight-date"></p>
+    </footer>
+
+</body>
+</html>
