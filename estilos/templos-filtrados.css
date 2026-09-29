@@ -118,9 +118,8 @@ main {
 
 #cartoes-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 1rem;
-    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
     width: 100%;
 }
 
