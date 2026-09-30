@@ -156,3 +156,11 @@ botaoMenu.addEventListener("click", () => {
         botaoMenu.textContent = "☰";
     }
 });
+
+const elementoAno = document.querySelector("#anoatual");
+const anoAtual = new Date().getFullYear();
+elementoAno.textContent = anoAtual;
+
+const elementoModificacao = document.querySelector("#ultimaModificacao");
+const ultimaModif = document.lastModified;
+elementoModificacao.innerHTML = `Última modificación: <span class="highlight-date">${ultimaModif}</span>`;
