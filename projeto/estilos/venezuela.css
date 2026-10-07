@@ -1,0 +1,224 @@
+:root {
+    --primary-color: #006699;     
+    --secondary-color: #F4B41A;   
+    --text-color: #2B2D42;        
+    --bg-color: #FAFAFA;          
+    --card-bg: #ffffff;           
+    --border-color: #dcdcdc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--card-bg);
+    text-align: center;
+    padding: 1.5rem 0 0 0;
+}
+
+header #site-title {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#menu-button {
+    display: block;            
+    background: none;
+    border: none;
+    color: var(--card-bg);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0 auto 0.5rem auto; 
+}
+
+nav ul {
+    display: none; 
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    background-color: #1c1c1c;
+}
+
+nav ul.open {
+    display: flex; 
+}
+
+nav a {
+    color: var(--card-bg);
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--secondary-color);
+    color: #1c1c1c;
+    font-weight: bold;
+}
+
+.main-title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin: 2rem 0 0.5rem 0;
+    color: var(--primary-color);
+}
+
+.intro-text {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    padding: 0 1rem;
+}
+
+main {
+    flex: 1;
+    max-width: 1050px;      
+    margin: 0 auto 4rem auto; 
+    padding: 0 1.5rem;
+    width: 100%;
+}
+
+#cartoes-container, #galeria-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.templo-cartao {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.templo-cartao img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.templo-cartao h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.templo-cartao p {
+    padding: 0.2rem 1rem;
+    font-size: 0.95rem;
+}
+
+.templo-cartao p:last-child {
+    padding-bottom: 1.5rem;
+}
+
+.filtros-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.btn-filtro, .btn-enviar {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-filtro:hover {
+    background-color: var(--secondary-color);
+    color: #1c1c1c;
+}
+
+.form-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.btn-enviar {
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--card-bg);
+    text-align: center;
+    padding: 1.8rem;
+    font-size: 0.9rem;
+}
+
+.highlight-date {
+    color: #ffff00;
+}
+
+@media screen and (min-width: 768px) {
+    #menu-button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #1c1c1c;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+    }
+
+    #cartoes-container, #galeria-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}

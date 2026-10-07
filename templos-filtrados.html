@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Álbum de Templos - Karen Zerpa</title>
+    <meta name="description" content="Página de Álbum de Templos desenvolvida para o curso WDD 131, praticando estruturas HTML avançadas, componentes mobile-first e exibições dinâmicas.">
+    <meta name="author" content="Karen Nikol Zerpa Rivas">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <link rel="stylesheet" href="estilos/templos-filtrados-grandes.css" media="screen and (min-width: 768px)">    
+    <script defer src="scripts/templos-filtrados.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <span id="course-title">Álbum do Templo</span>
+        <button id="menu-button" aria-label="Alternar menu">☰</button>
+        <nav>
+            <ul id="menu-links">
+                <li><a href="#">página inicial</a></li>
+                <li><a href="#">antigo</a></li>
+                <li><a href="#">novo</a></li>
+                <li><a href="#">grande</a></li>
+                <li><a href="#">pequeno</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="main-title">Álbum de Templos</h1>
+        
+        <div id="cartoes-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> 🌺 Karen Zerpa 🌺 Campinas, SP</p>
+        <p id="ultimaModificacao" class="highlight-date"></p>
+    </footer>
+
+</body>
+</html>
