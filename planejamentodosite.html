@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre Venezuela - Guia Turístico e Cultural</title>
+    <meta name="description" content="Portal turístico e cultural sobre a Venezuela, destacando sua geografia, gastronomia e tradições.">
+    
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/venezuela.css">
+    
+    <script src="scripts/venezuela.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <span id="site-title">Descubre Venezuela 🇻🇪</span>
+        <button id="menu-button" aria-label="Alternar menu">☰</button>
+        <nav>
+            <ul id="menu-links">
+                <li><a href="index.html" class="active">Página Inicial</a></li>
+                <li><a href="galeria.html">Galeria Interativa</a></li>
+                <li><a href="contato.html">Contato e Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="main-title">Geografia e Diversidade</h1>
+        <p class="intro-text">Explore as maravilhas de uma terra única, que vai desde as praias paradisíacas do Caribe até os picos nevados dos Andes.</p>
+        
+        <div id="cartoes-container">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> 🌺 Karen Zerpa 🌺 Campinas, SP</p>
+        <p id="ultimaModificacao" class="highlight-date"></p>
+        <p><a href="referencias.html" style="color: var(--card-bg); text-decoration: underline;">Referências e Citações</a></p>
+    </footer>
+
+</body>
+</html>

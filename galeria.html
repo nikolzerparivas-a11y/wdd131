@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Cultural - Descubre Venezuela</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="estilos/venezuela.css">
+    <script src="scripts/venezuela.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <span id="site-title">Descubre Venezuela 🇻🇪</span>
+        <button id="menu-button" aria-label="Alternar menu">☰</button>
+        <nav>
+            <ul id="menu-links">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="galeria.html" class="active">Galeria Interativa</a></li>
+                <li><a href="contato.html">Contato e Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="main-title">Mosaico Cultural</h1>
+        
+        <div class="filtros-menu">
+            <button class="btn-filtro" data-categoria="todos">Todos</button>
+            <button class="btn-filtro" data-categoria="paisagens">Pontos Turísticos</button>
+            <button class="btn-filtro" data-categoria="gastronomia">Pratos Típicos</button>
+            <button class="btn-filtro" data-categoria="festas">Festividades</button>
+        </div>
+        
+        <div id="galeria-container">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> 🌺 Karen Zerpa 🌺 Campinas, SP</p>
+        <p id="ultimaModificacao" class="highlight-date"></p>
+        <p><a href="referencias.html" style="color: var(--card-bg); text-decoration: underline;">Referências e Citações</a></p>
+    </footer>
+
+</body>
+</html>
