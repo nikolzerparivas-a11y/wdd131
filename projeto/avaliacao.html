@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Concluída - Descubre Venezuela</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="estilos/venezuela.css">
+    <script src="scripts/avaliacao.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <span id="site-title">Avaliação Concluída 🇻🇪</span>
+    </header>
+
+    <main style="text-align: center; padding: 3rem 1.5rem;">
+        <div class="confirmacao-card" style="background: white; padding: 3rem; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); max-width: 600px; margin: 0 auto;">
+            <h1 style="color: var(--primary-color); font-family: 'Poppins', sans-serif; margin-bottom: 1rem;">Obrigado pelo seu feedback!</h1>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">Sua avaliação foi enviada e processada com sucesso no nosso sistema.</p>
+            
+            <div id="contador-container" style="background: var(--secondary-color); color: #1c1c1c; padding: 1rem; border-radius: 4px; font-weight: bold; margin-bottom: 2rem;">
+                Você já concluiu um total de: <span id="contador-numero">0</span> avaliações.
+            </div>
+
+            <a href="index.html" class="btn-filtro" style="text-decoration: none; display: inline-block;">Voltar para a Página Inicial</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> 🌺 Karen Zerpa 🌺 Campinas, SP</p>
+        <p id="ultimaModificacao" class="highlight-date"></p>
+    </footer>
+
+</body>
+</html>
