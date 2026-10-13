@@ -24,12 +24,17 @@ document.addEventListener("DOMContentLoaded", () => {
         elementoModificacao.innerHTML = `Última modificação: <span class="highlight-date">${document.lastModified}</span>`;
     }
 
-    const selectProduto = document.querySelector("#produto");
+    const selectProduto = document.getElementById("produto");
+    
     if (selectProduto) {
+        selectProduto.innerHTML = '<option value="" disabled selected>Selecione um Produto...</option>';
+
         produtos.forEach(prod => {
             const opcao = document.createElement("option");
+            
             opcao.value = prod.id;         
             opcao.textContent = prod.name; 
+            
             selectProduto.appendChild(opcao);
         });
     }
@@ -37,14 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const elementoContador = document.querySelector("#contador-numero");
     if (elementoContador) {
         const parametrosUrl = new URLSearchParams(window.location.search);
-        
         let totalAvaliacoes = parseInt(localStorage.getItem("totalAvaliacoesConcluidas")) || 0;
 
         if (parametrosUrl.has("produto")) {
             totalAvaliacoes += 1;
             localStorage.setItem("totalAvaliacoesConcluidas", totalAvaliacoes);
         }
-
         elementoContador.textContent = totalAvaliacoes;
     }
 });
