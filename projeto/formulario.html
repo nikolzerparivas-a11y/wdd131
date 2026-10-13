@@ -12,6 +12,43 @@
     
     <link rel="stylesheet" href="estilos/venezuela.css">
     <script src="scripts/avaliacao.js" defer></script>
+
+    <style>
+        .star-rating {
+            display: flex !important;
+            flex-direction: row-reverse !important; 
+            justify-content: flex-end !important;
+            font-size: 2.8rem !important; /* Estrelas grandes e fáceis de clicar */
+            gap: 0.5rem !important;
+            margin: 0.5rem 0 1.5rem 0 !important;
+        }
+
+        .star-rating input,
+        .star-rating input[type="radio"] {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            position: absolute !important;
+        }
+
+        .star-rating label {
+            color: #cbd5e1 !important; 
+            cursor: pointer !important;
+            display: inline-block !important;
+            transition: color 0.2s ease, transform 0.1s ease !important;
+        }
+
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #F4B41A !important; 
+            transform: scale(1.1);
+        }
+
+        .star-rating input[type="radio"]:checked ~ label,
+        .star-rating input[type="radio"]:checked ~ label ~ label {
+            color: #F4B41A !important;
+        }
+    </style>
 </head>
 <body>
 
