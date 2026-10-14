@@ -195,6 +195,7 @@ footer {
     text-align: center;
     padding: 1.8rem;
     font-size: 0.9rem;
+    margin-top: auto;
 }
 
 .highlight-date {
@@ -290,4 +291,25 @@ textarea {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     margin-top: 0.3rem;
+}
+
+main h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    margin: 1.5rem 0 0.5rem 0;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.3rem;
+}
+
+main p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+main ul, main ol {
+    margin: 0 0 1.5rem 1.5rem;
+}
+
+main li {
+    margin-bottom: 0.4rem;
 }

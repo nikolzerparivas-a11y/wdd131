@@ -25,16 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const selectProduto = document.getElementById("produto");
-    
     if (selectProduto) {
         selectProduto.innerHTML = '<option value="" disabled selected>Selecione um Produto...</option>';
 
         produtos.forEach(prod => {
             const opcao = document.createElement("option");
-            
             opcao.value = prod.id;         
             opcao.textContent = prod.name; 
-            
             selectProduto.appendChild(opcao);
         });
     }
